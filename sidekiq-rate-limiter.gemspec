@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "simplecov"
   s.add_development_dependency "simplecov-lcov", '~> 0.8.0'
 
-  s.add_dependency "sidekiq", ">= 4.0", "< 7.0"
+  s.add_dependency "sidekiq", ">= 4.0", "< 9.0"  # Increase upper bound to include Sidekiq 8.x
   s.add_dependency "redis_rate_limiter"
+  s.required_ruby_version = '>= 2.7.0'  # Add explicit Ruby version requirement
 end
